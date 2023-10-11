@@ -1,0 +1,27 @@
+:root{
+    --main-color:#453536;
+    --secondary-color:#C1B1B4;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    height:100vh;
+    margin:0;
+    border: 1px solid white;
+   
+}
+header{
+    height:20%;
+    border:1px solid yellow;
+
+}
+#main{
+    display:flex;
+    height:100%;
+}
+#logo{
+    width: 20%;
+    height: 100%;
+    border:1px solid red;
+}
