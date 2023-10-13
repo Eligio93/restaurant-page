@@ -4,9 +4,7 @@
 }
 
 * {
-    font-family: 'Fredericka the Great', serif;
-    font-family: 'Pixelify Sans', sans-serif;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     box-sizing: border-box;
 }
 
@@ -16,6 +14,7 @@ body {
     background-color: var(--main-color);
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 header {
@@ -24,14 +23,22 @@ header {
     height: 20%;
     justify-content: flex-end;
     padding-bottom: 20px;
-    border-bottom:1px solid var(--secondary-color)
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 #banner {
     display: flex;
-    overflow: hidden;
     justify-content: center;
     color: var(--secondary-color);
+}
+
+#logo-banner {
+    width: 10%;
+    height: 100%;
+    background-image: url(/dist/logo.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #banner p {
@@ -40,18 +47,16 @@ header {
     justify-content: center;
     font-size: 150%;
     text-transform: uppercase;
-
-
 }
 
-nav {
-    min-height: 30%;
+#nav-bar {
+    height: 30%;
     display: flex;
     justify-content: center;
     gap: 20%;
 }
 
-li {
+#nav-bar li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,7 +65,7 @@ li {
     padding: 10px;
 }
 
-li:hover {
+#nav-bar li:hover {
     border-top: 2px solid var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
     cursor: pointer;
@@ -68,11 +73,11 @@ li:hover {
 
 #main {
     display: flex;
-    height: 100%;
+    height: 70%;
 }
 
 #logo {
-    min-width: 20%;
+    width: 20%;
     height: 100%;
 
     background-image: url(logo.jpeg);
@@ -80,23 +85,50 @@ li:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
-footer{
-    height: 10%;
-    border-top:1px solid white;
-    background-size:cover;    
+
+#content {
+    display: flex;
+    justify-content: center;
+    width: 80%;
 }
 
-#home-background{
-    height:100%;
-    display:flex;
+
+#home-background {
+    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     background: linear-gradient(to right, rgba(69, 53, 54, 1)20%, rgba(69, 53, 54, 0) 70%), url(/src/home.jpg);
     background-size: cover;
 }
-#home-background h2{
-    color:var(--secondary-color);
-    font-weight:lighter;
-    width:30%;
- 
+
+#home-background h2 {
+    color: var(--secondary-color);
+    font-weight: lighter;
+    width: 30%;
+}
+
+#menu-page {
+    width: 50%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.menu-header {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+#menu-page li {
+    list-style: none;
+    color: var(--secondary-color)
+}
+
+
+footer {
+    height: 10%;
+    border-top: 1px solid white;
+    background-size: cover;
 }
