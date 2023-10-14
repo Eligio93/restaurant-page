@@ -1,3 +1,5 @@
+/*CSS CLasses*/
+
 :root {
     --main-color: #453536;
     --secondary-color: #C1B1B4;
@@ -70,6 +72,13 @@ header {
     border-top: 2px solid var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
     cursor: pointer;
+}
+.active{
+    border-top:2px solid var(--secondary-color);
+    border-bottom:2px solid var(--secondary-color);
+}
+.inactive{
+    border:none;
 }
 
 #main {
