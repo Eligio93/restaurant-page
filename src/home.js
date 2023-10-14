@@ -1,7 +1,4 @@
 const createHome=function(){
-    let homeButton=document.getElementById("home");
-    homeButton.style.borderTop="2px solid var(--secondary-color)";
-    homeButton.style.borderBottom="2px solid var(--secondary-color)";
     let content=document.getElementById("content");
     let homeBackground=document.createElement("div");
     homeBackground.id="home-background";
