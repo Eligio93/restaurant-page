@@ -1,5 +1,7 @@
 import createHome from "./home";
 import createMenu from "./menu";
+import createContacts from "./contacts";
+
 let homeButton=document.getElementById("home");
 let menuButton=document.getElementById("menu");
 let contactsButton=document.getElementById("contacts");
@@ -20,5 +22,13 @@ menuButton.addEventListener("click",function(){
    
     content.innerHTML="";
    createMenu();
+});
+contactsButton.addEventListener("click",function(){
+    homeButton.className="inactive";
+    menuButton.className="inactive";
+    contactsButton.className="active";
+    content.innerHTML="";
+    createContacts();
+
 })
 
