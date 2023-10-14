@@ -121,9 +121,16 @@ header {
 #menu-page {
     width: 50%;
     padding:20px;
-    max-height: 100%;
+    height: 100%;
     overflow-y: auto;
    
+}
+#contacts-page{
+    width: 50%;
+    padding:20px;
+    height: 100%;
+    overflow-y: auto;
+
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -143,11 +150,27 @@ header {
   }
 
 
-.menu-header {
+.menu-header, .contact-header {
     background-color: var(--secondary-color);
     color: var(--main-color);
     border-radius: 10px 10px 0 0;
     text-align: center;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-bottom:20px;
+    
+    
+}
+ h3{
+    margin:0;
+    padding:0;
+}
+#contacts-page p{
+    color:var(--secondary-color)
+}
+#contacts-page img{
+    width:100%;
+    height:auto;
 }
 
 #menu-page li {
