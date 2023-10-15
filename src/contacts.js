@@ -1,3 +1,5 @@
+import mapImg from "./Location.png";
+
 let contacts=[{
     header:"Phone",
     info:["Tel. +39 080 698 3621"]
@@ -20,7 +22,7 @@ const createContacts=function(){
         contactsPage.appendChild(contactHeader);
         if(contacts[i].header=="Where to find us"){
             let map=document.createElement("img");
-            map.src="/src/Location.png";
+            map.src=mapImg;
             contactsPage.appendChild(map);
         }
         for(let j=0;j<contacts[i].info.length;j++){
