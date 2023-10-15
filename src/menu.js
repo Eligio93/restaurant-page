@@ -26,15 +26,13 @@ const createMenu=function(){
         title.textContent=menu[i].id;
         menuHeader.appendChild(title);
         menuPage.appendChild(menuHeader);
-        console.log(menu[i]);
         let unList=document.createElement("ul");
         for(let j=0;j<menu[i].dish.length;j++){
-            console.log(menu[i].dish[j]);
             let li=document.createElement("li");
             li.textContent=menu[i].dish[j];
             unList.appendChild(li);
             menuPage.appendChild(unList);
-            console.log(menu[i].dish[j]);
+
         }
 
     }
