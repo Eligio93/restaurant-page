@@ -180,7 +180,20 @@ header {
 
 
 footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
     height: 10%;
     border-top: 1px solid white;
     background-size: cover;
+}
+footer img{
+   height: 50%;
+   margin-right:10px;
+   
+}
+footer a{ 
+    color:var(--secondary-color);
+    text-decoration: none;
 }
