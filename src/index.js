@@ -1,6 +1,7 @@
 import createHome from "./home";
 import createMenu from "./menu";
 import createContacts from "./contacts";
+import "./style.css";
 
 let homeButton=document.getElementById("home");
 let menuButton=document.getElementById("menu");
