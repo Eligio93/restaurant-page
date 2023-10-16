@@ -9,3 +9,6 @@ The import export of modules was pretty easy to understando and to implement. Th
 ## Conclusion
 I had a lot of fun building this project, using HTML,CSS and Javascript,and it was so satisfying to see the final resulta as my project start to shape more like a real world project and not just study exercitations.
 
+## Live Preview
+[Live Preview Here](https://eligio93.github.io/restaurant-page/)
+
